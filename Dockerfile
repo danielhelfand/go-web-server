@@ -10,4 +10,6 @@ RUN go build -o go-web-server
 
 EXPOSE 8080
 
+USER 1001
+
 CMD ["./go-web-server"]
