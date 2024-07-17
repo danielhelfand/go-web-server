@@ -1,4 +1,4 @@
-FROM golang:1.14
+FROM golang:1.22.5
 
 RUN mkdir /app
 
@@ -6,7 +6,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN go build -o go-web-server
+RUN go build ./...
 
 EXPOSE 8080
 
