@@ -12,8 +12,6 @@ spec:
       labels:
         app: go-web-server
     spec:
-      imagePullSecrets:
-      - name: registry-credentials
       containers:
       - name: go-web-server
         image: ghcr.io/danielhelfand/go-web-server:master
