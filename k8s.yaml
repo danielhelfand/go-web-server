@@ -16,7 +16,7 @@ spec:
       - name: registry-credentials
       containers:
       - name: go-web-server
-        image: danielhelfand/go-web-server:latest
+        image: ghcr.io/danielhelfand/go-web-server:master
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
